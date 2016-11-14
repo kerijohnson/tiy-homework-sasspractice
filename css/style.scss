@@ -1,0 +1,110 @@
+@import  "partials/variables.scss";
+
+
+@mixin button {
+    color: white;
+    font-size: 16px;
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 6px;
+    background: transparent;
+  }
+
+@mixin verticalcenter {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h1, h2, h3, h4, h5, h6, p, button {
+  margin: 0;
+  text-transform: $Transform;
+  font-weight: $Light;
+}
+
+header {
+  background-color: $Primary;
+  overflow: hidden;
+}
+
+ul {
+  float: left;
+  margin-left: 150px;
+
+li {
+    display: inline;
+    font-family: $Font;
+    text-transform: $Transform;
+    padding: 30px;
+    font-size: 14px;
+
+  a {
+      text-decoration: none;
+      color: $Textcolor;
+      position: relative;
+      bottom: 30px;
+  }
+
+    a:hover {
+      color: $Secondary;
+      border-bottom: 1px solid;
+      border-bottom-color: $Textcolor;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=0404a6987743c9f447f3abde5e2a34d8");
+  background-size: cover;
+  height: 500px;
+
+  .hero-text {
+    color: $Textcolor;
+    text-align: center;
+    @include verticalcenter;
+    font-family: $Font;
+
+    h1 {
+      font-size: 60px;
+    }
+
+    h3 {
+    font-size: 20px;
+  }
+
+  button {
+    @include button;
+    margin-top: 20px;
+  }
+   button:hover {
+     background-color: $Secondary;
+     border-color: $Secondary;
+   }
+ }
+}
+
+.banner {
+  background-color: $Secondary;
+  height: 200px;
+
+  .banner-text {
+    color: $Textcolor;
+    text-align: center;
+    @include verticalcenter;
+    font-family: $Font;
+    padding-left: 220px;
+    padding-right: 220px;
+    font-size: 22px;
+  }
+
+  button {
+    @include button;
+  margin-top: 20px;
+  }
+
+  button:hover {
+    background-color: $Textcolor;
+    border-color: $Textcolor;
+  }
+}

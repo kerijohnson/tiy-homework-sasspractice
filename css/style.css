@@ -1,0 +1,82 @@
+h1, h2, h3, h4, h5, h6, p, button {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+header {
+  background-color: #94b4b3;
+  overflow: hidden; }
+
+ul {
+  float: left;
+  margin-left: 150px; }
+  ul li {
+    display: inline;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 30px;
+    font-size: 14px; }
+    ul li a {
+      text-decoration: none;
+      color: #3c4242;
+      position: relative;
+      bottom: 30px; }
+    ul li a:hover {
+      color: #d3795f;
+      border-bottom: 1px solid;
+      border-bottom-color: #3c4242;
+      padding-bottom: 15px; }
+
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=0404a6987743c9f447f3abde5e2a34d8");
+  background-size: cover;
+  height: 500px; }
+  .hero .hero-text {
+    color: #3c4242;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: sans-serif; }
+    .hero .hero-text h1 {
+      font-size: 60px; }
+    .hero .hero-text h3 {
+      font-size: 20px; }
+    .hero .hero-text button {
+      color: white;
+      font-size: 16px;
+      padding: 10px 12px;
+      border: 1px solid white;
+      border-radius: 6px;
+      background: transparent;
+      margin-top: 20px; }
+    .hero .hero-text button:hover {
+      background-color: #d3795f;
+      border-color: #d3795f; }
+
+.banner {
+  background-color: #d3795f;
+  height: 200px; }
+  .banner .banner-text {
+    color: #3c4242;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: sans-serif;
+    padding-left: 220px;
+    padding-right: 220px;
+    font-size: 22px; }
+  .banner button {
+    color: white;
+    font-size: 16px;
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 6px;
+    background: transparent;
+    margin-top: 20px; }
+  .banner button:hover {
+    background-color: #3c4242;
+    border-color: #3c4242; }
+
+/*# sourceMappingURL=style.css.map */
